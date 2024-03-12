@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build C#",
+            "label": "Build and Run C#",
             "type": "shell",
             "command": "csc",
             "args": [
@@ -14,14 +14,14 @@
             }
         },
         {
-            "label": "Run C#",
+            "label": "Build and Run C#",
             "type": "shell",
             "command": "mono",
             "args": [
                 "${fileDirname}/${fileBasenameNoExtension}.exe"
             ],
             "group": {
-                "kind": "test",
+                "kind": "build",
                 "isDefault": true
             }
         }
